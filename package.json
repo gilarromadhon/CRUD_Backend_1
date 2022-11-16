@@ -4,9 +4,10 @@
   "description": "",
   "type": "module",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "test": "jest",
+  "start": "node index.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
