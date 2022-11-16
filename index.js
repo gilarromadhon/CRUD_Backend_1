@@ -1,6 +1,6 @@
 import express from "express";
 // import cors from "cors";
-// import UserRoute from "./routes/UserRoute.js";
+import UserRoute from "./routes/UserRoute.js";
  
 // const app = express();
 // app.use(cors());
@@ -11,11 +11,13 @@ import express from "express";
 
 const app = express();
 const port = 9000;
-app.use("/", (req, res) => {
-    res.json({
-        message: "Hello"
-    })
-})
+// app.use("/", (req, res) => {
+//     res.json({
+//         message: "Hello"
+//     })
+// })
+app.use(UserRoute);
+
 app.listen(9000, () => {
     console.log(`Server up and running on ${port}`)
 });
